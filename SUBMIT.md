@@ -1,6 +1,6 @@
 # ModelFold MCP directory submissions
 
-Status: materials prepared; nothing submitted to a directory or published to a package registry.
+Status (2026-11-22): npm modelfold-mcp@0.1.0, PyPI modelfold 0.1.0, official MCP Registry io.github.AIModelFold/modelfold-mcp published; Glama submitted; Smithery pending.
 
 ## Listing copy
 
