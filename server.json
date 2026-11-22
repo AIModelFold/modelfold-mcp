@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.AIModelFold/modelfold-mcp",
+  "title": "ModelFold",
+  "description": "Discover ModelFold models, run chat and image generation, and check account balances.",
+  "websiteUrl": "https://modelfold.ai",
+  "repository": {
+    "url": "https://github.com/AIModelFold/modelfold-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [{
+    "registryType": "npm",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "identifier": "modelfold-mcp",
+    "version": "0.1.0",
+    "transport": { "type": "stdio" },
+    "environmentVariables": [{
+      "name": "MODELFOLD_API_KEY",
+      "description": "ModelFold API key used for the local MCP server.",
+      "isRequired": true,
+      "isSecret": true
+    }]
+  }]
+}

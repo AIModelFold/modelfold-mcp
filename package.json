@@ -1,0 +1,24 @@
+{
+  "name": "modelfold-mcp",
+  "version": "0.1.0",
+  "description": "ModelFold MCP server for model discovery, chat, image generation and account balances",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/AIModelFold/modelfold-mcp#readme",
+  "repository": "github:AIModelFold/modelfold-mcp",
+  "mcpName": "io.github.AIModelFold/modelfold-mcp",
+  "keywords": ["mcp", "modelfold", "model-context-protocol", "openai-compatible"],
+  "bin": { "modelfold-mcp": "dist/index.js" },
+  "files": ["dist/*.js"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": { "@types/node": "^20.0.0", "typescript": "^5.9.3" }
+}

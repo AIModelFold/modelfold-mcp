@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modelfold"
+version = "0.1.0"
+description = "ModelFold client preset for the OpenAI Python SDK"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = ["openai>=1.55,<3"]
+keywords = ["modelfold", "openai-compatible", "chat", "models"]
+
+[project.urls]
+Homepage = "https://modelfold.ai"
+Repository = "https://github.com/AIModelFold/modelfold-mcp"
+
+[tool.setuptools.packages.find]
+where = ["src"]

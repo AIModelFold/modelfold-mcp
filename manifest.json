@@ -1,0 +1,30 @@
+{
+  "manifest_version": "0.3",
+  "name": "modelfold-mcp",
+  "display_name": "ModelFold",
+  "version": "0.1.0",
+  "description": "Discover ModelFold models, run chat and image generation, and check account balances.",
+  "author": { "name": "AIModelFold", "url": "https://modelfold.ai" },
+  "homepage": "https://modelfold.ai",
+  "repository": { "type": "git", "url": "https://github.com/AIModelFold/modelfold-mcp" },
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"],
+      "env": { "MODELFOLD_API_KEY": "${user_config.modelfold_api_key}" }
+    }
+  },
+  "compatibility": { "runtimes": { "node": ">=20" } },
+  "user_config": {
+    "modelfold_api_key": {
+      "type": "string",
+      "title": "ModelFold API Key",
+      "description": "Your ModelFold API key, used to authorize tool calls.",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}
